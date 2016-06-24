@@ -1,6 +1,6 @@
 {
   "name": "marker-clusterer-plus-es2015",
-  "version": "2.1.2",
+  "version": "3.0.2",
   "description": "markerclustererplus with es2015 exports",
   "main": "dist/markerclustererplus.js",
   "scripts": {
