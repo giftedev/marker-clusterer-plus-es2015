@@ -94,7 +94,7 @@
  *  to use for various cluster sizes.
  * @private
  */
-function ClusterIcon(cluster, styles) {
+export function ClusterIcon(cluster, styles) {
   cluster.getMarkerClusterer().extend(ClusterIcon, google.maps.OverlayView);
 
   this.cluster_ = cluster;
@@ -352,7 +352,7 @@ ClusterIcon.prototype.getPosFromLatLng_ = function (latlng) {
  * @param {MarkerClusterer} mc The <code>MarkerClusterer</code> object with which this
  *  cluster is associated.
  */
-function Cluster(mc) {
+export function Cluster(mc) {
   this.markerClusterer_ = mc;
   this.map_ = mc.getMap();
   this.gridSize_ = mc.getGridSize();
@@ -660,7 +660,7 @@ Cluster.prototype.isMarkerAlreadyAdded_ = function (marker) {
  * @param {Array.<google.maps.Marker>} [opt_markers] The markers to be added to the cluster.
  * @param {MarkerClustererOptions} [opt_options] The optional parameters.
  */
-function MarkerClusterer(map, opt_markers, opt_options) {
+export default function MarkerClusterer(map, opt_markers, opt_options) {
   // MarkerClusterer implements google.maps.OverlayView interface. We use the
   // extend function to extend MarkerClusterer with google.maps.OverlayView
   // because it might not always be available when the code is defined so we
