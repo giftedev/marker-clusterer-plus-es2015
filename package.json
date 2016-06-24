@@ -1,0 +1,26 @@
+{
+  "name": "marker-clusterer-plus-es2015",
+  "version": "2.1.2",
+  "description": "markerclustererplus with es2015 exports",
+  "main": "src/markerclustererplus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gex/marker-clusterer-plus-es2015.git"
+  },
+  "keywords": [
+    "google maps",
+    "marker clusterer",
+    "cluster",
+    "es6",
+    "es2015"
+  ],
+  "author": "Gergo Szonyi",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gex/marker-clusterer-plus-es2015/issues"
+  },
+  "homepage": "https://github.com/gex/marker-clusterer-plus-es2015#readme"
+}
