@@ -5,6 +5,7 @@
   "main": "dist/markerclustererplus.js",
   "scripts": {
     "compile": "babel --presets es2015 -d dist/ src/",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
