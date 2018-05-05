@@ -1570,7 +1570,18 @@ MarkerClusterer.prototype.extend = function (obj1, obj2) {
 MarkerClusterer.CALCULATOR = function (markers, numStyles) {
   var index = 0;
   var title = "";
-  var count = markers.length.toString();
+  
+  var count = 0;
+
+  markers.map(marker => {
+    if (marker.isGroup) {
+      count += marker.data.length;
+    } else {
+      count += 1;
+    }
+  });
+
+  count = count.toString();
 
   var dv = count;
   while (dv !== 0) {
