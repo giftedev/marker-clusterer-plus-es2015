@@ -2,7 +2,7 @@
   "name": "marker-clusterer-plus-es2015",
   "version": "3.0.2",
   "description": "markerclustererplus with es2015 exports",
-  "main": "dist/markerclustererplus.js",
+  "main": "src/markerclustererplus.js",
   "scripts": {
     "compile": "babel --presets es2015 -d dist/ src/",
     "prepublish": "npm run compile",
